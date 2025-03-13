@@ -100,7 +100,7 @@ function displayErrorVideo (error){
         <div class="h-screen flex justify-center items-center -mt-22">
             <div class="grid justify-center">
                 <div>
-                    <img class="w-48 rounded-md" src="./assets/icon.png" alt="Shoes" />
+                    <img class="w-48 rounded-md" src="./assets/Icon.png" alt="photo-error" />
                 </div>
                 <p class="">${error}</p>
             </div>
