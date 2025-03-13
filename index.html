@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html id="html" lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+    <!-- font awosome kit -->
+    <script src="https://kit.fontawesome.com/d5be0aa549.js" crossorigin="anonymous"></script>
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-4">
+    <header class="container mx-auto">
+        <nav class="w- mx-auto border-b-1 border-slate-500 shadow-slate-600 shadow-sm rounded-full flex justify-between p-4 items-center gap-1">
+            <div>
+                <img class="bg-white py-1 px-2 w-40 rounded-full" src="./assets/Logo.png" alt="">
+            </div>
+            <div>
+                <button class="btn">Sort by view</button>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+                <div>
+                    <button class="btn bg-red-800 text-white">Blog</button>
+                </div>
+                <div class="tooltip tooltip-info" data-tip="change">
+                    <div class="tooltip-content">
+                        <div class=" text-dark">change theme</div>
+                    </div>
+                    <input id="theme-control" type="checkbox" value="synthwave"
+                        class="toggle theme-controller text-blue-300 " />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="category-container" class="mt-6 container mx-auto flex justify-center items-center gap-4">
+        <div>
+            <button class="btn btn-sm bg-red-800 text-white">All</button>
+        </div>
+    </nav>
+
+    <main class="">
+
+        <div id="error-video-container"></div>
+
+        <div id="video-container" class="mt-10 container mx-auto grid md:grid-cols-4 gap-3 justify-center">
+            <!-- <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <img src="" alt="">
+                    <h2 class="card-title">A card component has a figure, a body part, and inside body there are title and actions parts</h2>
+                    <p></p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div> -->
+            
+        
+        </div>
+    </main>
+
+
+
+    <script src="./scripts/dark.js"></script>
+    <script src="./scripts/loadCategories.js"></script>
+    <script src="./scripts/loadVideos.js"></script>
+
+</body>
+
+</html>
