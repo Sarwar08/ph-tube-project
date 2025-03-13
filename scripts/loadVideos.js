@@ -1,7 +1,7 @@
 
 async function loadVideos() {
     try {
-        const res = await fetch('https://openapi.rogramming-hero.com/api/phero-tube/videos');
+        const res = await fetch('https://openapi.programming-hero.com/api/phero-tube/videos');
 
         const data = await res.json();
         // console.log(data.videos);
@@ -99,7 +99,7 @@ function displayErrorVideo (error){
     div.innerHTML = `
         <div class="h-screen flex justify-center items-center -mt-22">
             <div class="grid justify-center">
-                <div>
+                <div class="mb-4">
                     <img class="w-48 rounded-md" src="./assets/Icon.png" alt="photo-error" />
                 </div>
                 <p class="">${error}</p>
